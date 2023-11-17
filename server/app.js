@@ -7,12 +7,9 @@ expressWs(app);
 
 let port = 30038;
 
+app.use(express.static('threejs'));
 app.use('/', router);
 
 app.listen(port, () => {
     console.log(`port: ${port}`);
 });
-
-
-
-
